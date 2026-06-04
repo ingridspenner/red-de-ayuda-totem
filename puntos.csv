@@ -1,0 +1,10 @@
+id,tipo,nombre,lat,lng,direccion,horario,servicios,imagen,telefono,descripcion
+refugio-1,refugio,Un hogar para todas las noches,-31.396.339.349.162.000,-6.419.938.146.434.170,"Obispo Ceballos 44, barrio San Martín",CERRADO PERMANENTEME,,assets/refugio-ejemplo.svg,,Si sos varon y tenes entre 30 y 74 años este refugio es para vos
+refugio-2,refugio,Albergue Sol de Noche,-3.141.738.884.820.020,-6.416.001.219.676.710,"Republic Dominicana, Unidos, X5004 Córdoba",Ingreso a partir de las 20hs,"Alojamiento, cena, duchas y áreas comunes como comedor y baños",https://srt-assets.tadevel-cdn.com/5de57cf1d91dda498914297c/image.jpg,,"Si sos varon o mujer y tenes mas de 40 años, este alberge es para vos,  ofrece un lugar de pernocte seguro, contención y acompañamiento integral para personas en extrema vulnerabilidad"
+refugio-3,refugio,Manos Abiertas - Hospedería Padre Alberto Hurtado,-31.407.854.044.434.700,-64.178.506.481.639,"Libertad 171, B° Centro, Córdoba",Abierto 24 horas,"Alojamiento nocturno, baños, alimentación y talleres",assets/refugio-ejemplo.svg,0351 423-4682,"Aloja a hombres en situación de calle, tratando en todo momento que su estadía sea temporal, colaborando en la recuperación de adicciones y promoviendo la reinserción familiar y socio laboral."
+refugio-4,refugio,Casa Félix,,,"Suipacha 1972, barrio Pueyrredón",,,,3514241886,varones mayores de 25 años.
+refugio-5,refugio,Casa de María,,,,,,,,
+refugio-6,refugio,,,,,,,,,
+comedor-1,comida,Comedor La Esperanza,-314.171,-641.842,A 280 metros del tótem,12:00 a 15:00,"Almuerzo caliente, Agua",assets/comedor-ejemplo.svg,,Información cargada desde la planilla para mostrar en el detalle del lugar.
+comedor-2,comida,Mesa Solidaria,-314.149,,A 450 metros del tótem,19:00 a 21:00,"Cena, Infusión caliente",assets/comedor-ejemplo.svg,,Información cargada desde la planilla para mostrar en el detalle del lugar.
+comedor-3,comida,Punto Caliente Centro,-314.184,-641.815,A 800 metros del tótem,08:00 a 10:30,"Desayuno, Agua, Vianda",assets/comedor-ejemplo.svg,,Información cargada desde la planilla para mostrar en el detalle del lugar.

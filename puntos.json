@@ -1,0 +1,62 @@
+[
+  {
+    "id": "refugio-1",
+    "tipo": "refugio",
+    "nombre": "Refugio San Martín",
+    "lat": -31.4167,
+    "lng": -64.1833,
+    "direccion": "A 350 metros del tótem",
+    "horario": "Abierto 24 horas",
+    "servicios": ["Alojamiento", "Cena", "Ducha"]
+  },
+  {
+    "id": "refugio-2",
+    "tipo": "refugio",
+    "nombre": "Casa Puente",
+    "lat": -31.4158,
+    "lng": -64.1818,
+    "direccion": "A 600 metros del tótem",
+    "horario": "18:00 a 08:00",
+    "servicios": ["Alojamiento", "Desayuno", "Ropa de abrigo"]
+  },
+  {
+    "id": "refugio-3",
+    "tipo": "refugio",
+    "nombre": "Centro Noche",
+    "lat": -31.4181,
+    "lng": -64.185,
+    "direccion": "A 720 metros del tótem",
+    "horario": "Abierto 24 horas",
+    "servicios": ["Ducha", "Cena", "Atención social"]
+  },
+  {
+    "id": "comedor-1",
+    "tipo": "comida",
+    "nombre": "Comedor La Esperanza",
+    "lat": -31.4171,
+    "lng": -64.1842,
+    "direccion": "A 280 metros del tótem",
+    "horario": "12:00 a 15:00",
+    "servicios": ["Almuerzo caliente", "Agua"]
+  },
+  {
+    "id": "comedor-2",
+    "tipo": "comida",
+    "nombre": "Mesa Solidaria",
+    "lat": -31.4149,
+    "lng": -64.1836,
+    "direccion": "A 450 metros del tótem",
+    "horario": "19:00 a 21:00",
+    "servicios": ["Cena", "Infusión caliente"]
+  },
+  {
+    "id": "comedor-3",
+    "tipo": "comida",
+    "nombre": "Punto Caliente Centro",
+    "lat": -31.4184,
+    "lng": -64.1815,
+    "direccion": "A 800 metros del tótem",
+    "horario": "08:00 a 10:30",
+    "servicios": ["Desayuno", "Agua", "Vianda"]
+  }
+]
