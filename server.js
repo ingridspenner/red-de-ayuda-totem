@@ -1,6 +1,7 @@
 const http = require("http");
 const fs = require("fs");
 const path = require("path");
+const { execFileSync } = require("child_process");
 
 const root = __dirname;
 const port = Number(process.env.PORT || 4173);
@@ -44,6 +45,25 @@ function readBody(request) {
   });
 }
 
+function welcomeAudio() {
+  const script = [
+    "Add-Type -AssemblyName System.Speech",
+    "$ms = New-Object System.IO.MemoryStream",
+    "$s = New-Object System.Speech.Synthesis.SpeechSynthesizer",
+    "$s.SelectVoiceByHints([System.Speech.Synthesis.VoiceGender]::Female)",
+    "$s.Rate = -2",
+    "$s.SetOutputToWaveStream($ms)",
+    "$s.Speak('Toca la pantalla para comenzar.')",
+    "$s.Dispose()",
+    "[Convert]::ToBase64String($ms.ToArray())"
+  ].join("; ");
+  const base64 = execFileSync("powershell.exe", ["-NoProfile", "-Command", script], {
+    encoding: "utf8",
+    maxBuffer: 2_000_000
+  }).trim();
+  return Buffer.from(base64, "base64");
+}
+
 function cleanPoint(point) {
   return {
     id: String(point.id || "").trim(),
@@ -83,6 +103,20 @@ const server = http.createServer(async (request, response) => {
       });
       response.end(data);
     });
+    return;
+  }
+
+  if (urlPath === "/api/welcome-audio" && request.method === "GET") {
+    try {
+      response.writeHead(200, {
+        "Content-Type": "audio/wav",
+        "Cache-Control": "no-store"
+      });
+      response.end(welcomeAudio());
+    } catch {
+      response.writeHead(500);
+      response.end("No se pudo generar el audio");
+    }
     return;
   }
 
