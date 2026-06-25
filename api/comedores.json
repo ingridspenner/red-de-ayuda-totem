@@ -1,0 +1,51 @@
+[
+  {
+    "id": "comedor-1",
+    "tipo": "comida",
+    "nombre": "Comedor La Esperanza",
+    "lat": -31.4114283699853,
+    "lng": -64.2441738533546,
+    "direccion": "Av Santa Ana 4500",
+    "horario": "12:00 a 15:00",
+    "servicios": [
+      "Almuerzo caliente",
+      "Agua"
+    ],
+    "imagen": "assets/comedor-la-esperanza.png",
+    "telefono": "0351 684-2441",
+    "descripcion": ""
+  },
+  {
+    "id": "comedor-2",
+    "tipo": "comida",
+    "nombre": "Programa Persona en Situación de Calle",
+    "lat": -31.4090570059417,
+    "lng": -64.1942871569252,
+    "direccion": "Santa Rosa N° 850, Centro",
+    "horario": "Lunes a viernes 8 a 20 horas",
+    "servicios": [
+      "Almuerzo caliente",
+      "Agua"
+    ],
+    "imagen": "assets/programa-persona-calle.png",
+    "telefono": "3515950589",
+    "descripcion": ""
+  },
+  {
+    "id": "comedor-3",
+    "tipo": "comida",
+    "nombre": "Fundación La Quadra",
+    "lat": -31.4285044615,
+    "lng": -64.2013312756277,
+    "direccion": "Julio A. Roca 706, Bella Vista",
+    "horario": "24hs",
+    "servicios": [
+      "Comedor",
+      "recorridas nocturnas",
+      "ayuda para ducharse y contención integral"
+    ],
+    "imagen": "assets/fundacion-la-quadra.png",
+    "telefono": "",
+    "descripcion": ""
+  }
+]

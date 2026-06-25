@@ -452,6 +452,7 @@ function scheduleFallbackHighlights(text, highlights) {
 function topBar(config, showBack = true) {
   return `
     <header class="top ${config.color}">
+      ${brandHeader()}
       ${showBack ? `<button class="back-mini" data-go="${config.back || "menu"}" aria-label="Volver">${icon("arrow")}</button>` : ""}
       ${config.customIcon ? mainButtonIcon(config.customIcon, "section-icon") : icon(config.icon, "icon")}
       <div class="top-copy">
@@ -477,6 +478,15 @@ function brandFooter() {
   return `
     <div class="brand-footer" aria-label="Red de ayuda">
       ${helpNetworkLogo("brand-logo")}
+      <strong>RED DE AYUDA</strong>
+    </div>
+  `;
+}
+
+function brandHeader() {
+  return `
+    <div class="brand-header" aria-label="Red de ayuda">
+      ${helpNetworkLogo("brand-header-logo")}
       <strong>RED DE AYUDA</strong>
     </div>
   `;
@@ -515,10 +525,10 @@ function render() {
 function renderWelcome() {
   return `
     <button class="screen welcome tap-target" data-go="menu" aria-label="Tocar para empezar">
+      ${brandHeader()}
       ${tapIconMarkup()}
       <h1>TOCÁ LA PANTALLA PARA EMPEZAR</h1>
       <audio data-welcome-audio src="/api/welcome-audio" autoplay playsinline preload="auto"></audio>
-      ${brandFooter()}
     </button>
   `;
 }
@@ -580,7 +590,6 @@ function renderMap(type) {
           <div id="service-map" class="real-map" role="img" aria-label="Mapa de ${config.title.toLowerCase()}"></div>
         </div>
       </div>
-      ${brandFooter()}
     </section>
   `;
 }
@@ -602,7 +611,6 @@ function renderRouteMap(point = state.selected) {
           <div class="route-status" data-route-status>Calculando recorrido...</div>
         </div>
       </div>
-      ${brandFooter()}
     </section>
   `;
 }
@@ -902,7 +910,6 @@ function renderDetail() {
         </div>
         <button class="route-button ${config.color}" data-start-route="${point.id}" data-route-target="route">${icon("send")} ${config.route}</button>
       </div>
-      ${brandFooter()}
     </section>
   `;
 }
@@ -927,7 +934,6 @@ function renderEmergency() {
           ${emergencyActionIcon("people")}
           <span>PEDIR AYUDA</span>
       </div>
-      ${brandFooter()}
     </section>
   `;
 }
@@ -940,7 +946,6 @@ function renderEmergencyWaiting() {
         ${emergencySirenIcon()}
         <h2>ESPERE AQUÍ<br>EMERGENCIAS ESTÁ<br>EN CAMINO</h2>
       </div>
-      ${brandFooter()}
     </section>
   `;
 }
@@ -993,7 +998,6 @@ function renderWaiting() {
         <h2>AGUARDÁ<br>LA AYUDA ESTÁ<br>EN CAMINO</h2>
         <div class="spinner" aria-hidden="true"></div>
       </div>
-      ${brandFooter()}
     </section>
   `;
 }
