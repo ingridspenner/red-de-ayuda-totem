@@ -15,12 +15,12 @@ Datos principales:
 ```text
 puntos-actualizados.csv
 puntos.csv
-api/puntos.json
-api/refugios.json
-api/comedores.json
-api/mapa.geojson
-api/refugios.geojson
-api/comedores.geojson
+datos/puntos.json
+datos/refugios.json
+datos/comedores.json
+datos/mapa.geojson
+datos/refugios.geojson
+datos/comedores.geojson
 ```
 
 ## URLs para otra aplicación
@@ -29,24 +29,28 @@ Todos los puntos:
 
 ```text
 https://ingridspenner.github.io/red-de-ayuda-totem/api/puntos.json
+https://ingridspenner.github.io/red-de-ayuda-totem/datos/puntos.json
 ```
 
 Solo refugios:
 
 ```text
 https://ingridspenner.github.io/red-de-ayuda-totem/api/refugios.json
+https://ingridspenner.github.io/red-de-ayuda-totem/datos/refugios.json
 ```
 
 Solo comedores:
 
 ```text
 https://ingridspenner.github.io/red-de-ayuda-totem/api/comedores.json
+https://ingridspenner.github.io/red-de-ayuda-totem/datos/comedores.json
 ```
 
 Mapa en formato GeoJSON:
 
 ```text
 https://ingridspenner.github.io/red-de-ayuda-totem/api/mapa.geojson
+https://ingridspenner.github.io/red-de-ayuda-totem/datos/mapa.geojson
 ```
 
 CSV actualizado:

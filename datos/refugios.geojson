@@ -1,0 +1,157 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "refugio-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.1993814643417,
+          -31.396339349162
+        ]
+      },
+      "properties": {
+        "id": "refugio-1",
+        "tipo": "refugio",
+        "nombre": "Un hogar para todas las noches",
+        "direccion": "Obispo Ceballos 44, barrio San Martín",
+        "horario": "Ingreso a partir de las 20hs",
+        "servicios": [],
+        "imagen": "https://prensa.cba.gov.ar/wp-content/uploads/2013/07/albergue-01.jpg",
+        "telefono": "",
+        "descripcion": "Si sos varón y tenés entre 30 y 74 años este refugio es para vos"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "refugio-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.1600121967671,
+          -31.4173888482002
+        ]
+      },
+      "properties": {
+        "id": "refugio-2",
+        "tipo": "refugio",
+        "nombre": "Albergue Sol de Noche",
+        "direccion": "Republica Dominicana, Unidos, X5004 Córdoba",
+        "horario": "Ingreso a partir de las 20hs",
+        "servicios": [
+          "Alojamiento",
+          "cena",
+          "duchas y áreas comunes como comedor y baños"
+        ],
+        "imagen": "https://srt-assets.tadevel-cdn.com/5de57cf1d91dda498914297c/image.jpg",
+        "telefono": "",
+        "descripcion": "Alojamiento para hombres y mujeres de más de 40 años. Incluye asistencia social, orientación y apoyo para recuperar autonomía"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "refugio-3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.178506481639,
+          -31.4078540444347
+        ]
+      },
+      "properties": {
+        "id": "refugio-3",
+        "tipo": "refugio",
+        "nombre": "Manos Abiertas - Hospedería Padre Alberto Hurtado",
+        "direccion": "Libertad 171, B° Centro, Córdoba",
+        "horario": "Abierto 24 horas",
+        "servicios": [
+          "Alojamiento nocturno",
+          "baños",
+          "alimentación y talleres"
+        ],
+        "imagen": "assets/manos-abiertas.png",
+        "telefono": "0351 423-4682",
+        "descripcion": "Alojamiento para hombres. Incluye asistencia social, orientación y apoyo para recuperar autonomía"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "refugio-4",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.1814174548737,
+          -31.4132429142134
+        ]
+      },
+      "properties": {
+        "id": "refugio-4",
+        "tipo": "refugio",
+        "nombre": "Hogar Sara",
+        "direccion": "Rivadavia 283, Centro",
+        "horario": "Abierto 24 horas",
+        "servicios": [
+          "Alojamiento nocturno",
+          "baños",
+          "alimentación y talleres"
+        ],
+        "imagen": "https://www.hogarmaria.com.ar/wp-content/uploads/2024/08/WhatsApp-Image-2024-07-27-at-11.23.47-e1723220339209-472x1024.jpeg",
+        "telefono": "3514241886",
+        "descripcion": "Alojamiento temporal para mujeres junto a sus hijos, con atención y orientación social."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "refugio-5",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.2000100192685,
+          -31.4143908346268
+        ]
+      },
+      "properties": {
+        "id": "refugio-5",
+        "tipo": "refugio",
+        "nombre": "Casa de María",
+        "direccion": "Paso de los Andes 242, Alberdi",
+        "horario": "Abierto 24 horas",
+        "servicios": [
+          "Alojamiento nocturno",
+          "baños",
+          "alimentación y talleres"
+        ],
+        "imagen": "https://www.hogarmaria.com.ar/wp-content/uploads/2024/08/WhatsApp-Image-2024-07-27-at-11.23.14-820x1024.jpeg",
+        "telefono": "3514225647",
+        "descripcion": "Alojamiento temporal para mujeres junto a sus hijos, con atención y orientación social."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "refugio-6",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.211263476134,
+          -31.4005177363816
+        ]
+      },
+      "properties": {
+        "id": "refugio-6",
+        "tipo": "refugio",
+        "nombre": "Nuestra Casa",
+        "direccion": "Enfermera Clermont 421, Alto Alberdi",
+        "horario": "Abierto 24 horas",
+        "servicios": [
+          "Alojamiento nocturno",
+          "baños",
+          "alimentación y talleres"
+        ],
+        "imagen": "https://www.lavoz.com.ar/resizer/v2/GEDWZUQUDRAWLEDAGWLA5U7IAA.jpg",
+        "telefono": "3514225647",
+        "descripcion": "Alojamiento que incluye asistencia social, orientación y apoyo para recuperar autonomía"
+      }
+    }
+  ]
+}

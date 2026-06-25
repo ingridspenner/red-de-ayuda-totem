@@ -1,0 +1,81 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "comedor-1",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.2441738533546,
+          -31.4114283699853
+        ]
+      },
+      "properties": {
+        "id": "comedor-1",
+        "tipo": "comida",
+        "nombre": "Comedor La Esperanza",
+        "direccion": "Av Santa Ana 4500",
+        "horario": "12:00 a 15:00",
+        "servicios": [
+          "Almuerzo caliente",
+          "Agua"
+        ],
+        "imagen": "assets/comedor-la-esperanza.png",
+        "telefono": "0351 684-2441",
+        "descripcion": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "comedor-2",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.1942871569252,
+          -31.4090570059417
+        ]
+      },
+      "properties": {
+        "id": "comedor-2",
+        "tipo": "comida",
+        "nombre": "Programa Persona en Situación de Calle",
+        "direccion": "Santa Rosa N° 850, Centro",
+        "horario": "Lunes a viernes 8 a 20 horas",
+        "servicios": [
+          "Almuerzo caliente",
+          "Agua"
+        ],
+        "imagen": "assets/programa-persona-calle.png",
+        "telefono": "3515950589",
+        "descripcion": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "comedor-3",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.2013312756277,
+          -31.4285044615
+        ]
+      },
+      "properties": {
+        "id": "comedor-3",
+        "tipo": "comida",
+        "nombre": "Fundación La Quadra",
+        "direccion": "Julio A. Roca 706, Bella Vista",
+        "horario": "24hs",
+        "servicios": [
+          "Comedor",
+          "recorridas nocturnas",
+          "ayuda para ducharse y contención integral"
+        ],
+        "imagen": "assets/fundacion-la-quadra.png",
+        "telefono": "",
+        "descripcion": ""
+      }
+    }
+  ]
+}

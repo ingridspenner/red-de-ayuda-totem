@@ -4,6 +4,7 @@ const path = require("path");
 const root = path.resolve(__dirname, "..");
 const csvPath = path.join(root, "puntos-actualizados.csv");
 const apiDir = path.join(root, "api");
+const datosDir = path.join(root, "datos");
 
 function parseDelimitedText(text) {
   const delimiter = text.includes(";") ? ";" : ",";
@@ -140,21 +141,25 @@ function geoJson(points) {
   };
 }
 
-function writeJson(fileName, data) {
-  fs.writeFileSync(path.join(apiDir, fileName), `${JSON.stringify(data, null, 2)}\n`, "utf8");
+function writeJson(dir, fileName, data) {
+  fs.writeFileSync(path.join(dir, fileName), `${JSON.stringify(data, null, 2)}\n`, "utf8");
 }
 
 fs.mkdirSync(apiDir, { recursive: true });
+fs.mkdirSync(datosDir, { recursive: true });
 
 const puntos = readPoints();
 const refugios = puntos.filter((point) => point.tipo === "refugio");
 const comedores = puntos.filter((point) => point.tipo === "comida");
 
-writeJson("puntos.json", puntos);
-writeJson("refugios.json", refugios);
-writeJson("comedores.json", comedores);
-writeJson("mapa.geojson", geoJson(puntos));
-writeJson("refugios.geojson", geoJson(refugios));
-writeJson("comedores.geojson", geoJson(comedores));
+["api", "datos"].forEach((dirName) => {
+  const dir = dirName === "api" ? apiDir : datosDir;
+  writeJson(dir, "puntos.json", puntos);
+  writeJson(dir, "refugios.json", refugios);
+  writeJson(dir, "comedores.json", comedores);
+  writeJson(dir, "mapa.geojson", geoJson(puntos));
+  writeJson(dir, "refugios.geojson", geoJson(refugios));
+  writeJson(dir, "comedores.geojson", geoJson(comedores));
+});
 
 console.log(`API generada: ${puntos.length} puntos`);
